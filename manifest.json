@@ -10,7 +10,10 @@
   "icons": {...},
 
   // Pick one (or none)
-  "browser_action": {...},
+  "browser_action": {
+    "default_icon": "",  // To fill in icon file
+    "default_popup": "popup.html" //Popup.html gives out popup layout for extension
+  },
   "page_action": {...},
 
   // Optional
