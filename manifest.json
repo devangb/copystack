@@ -80,5 +80,26 @@
   "tts_engine": {...},
   "update_url": "http://path/to/updateInfo.xml",
   "version_name": "aString",
-  "web_accessible_resources": [...]
+  "web_accessible_resources": [...],
+
+  "commands": {
+    "copy": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+s",
+        "mac": "Command+Shift+s"
+      }
+    },
+    "cut": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+x",
+        "mac": "Command+Shift+x"
+      }
+    },
+    "paste_dialog": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+v",
+        "mac": "Command+Shift+v"
+      }
+    }
+  }
 }
