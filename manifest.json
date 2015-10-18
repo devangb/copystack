@@ -12,6 +12,7 @@
   // Pick one (or none)
   "browser_action": {
     "default_icon": "",  // To fill in icon file
+    "default_title": "CopyStack",  
     "default_popup": "popup.html" //Popup.html gives out popup layout for extension
   },
   "page_action": {...},
@@ -32,7 +33,21 @@
     }
   },
   "chrome_url_overrides": {...},
-  "commands": {...},
+  "commands": {                        //to get access to keyboard shortcuts
+    "copy":{
+      "suggested_key":{
+        "default":"Ctrl+C"          //copy key shortcut
+        "mac":"Command+C"
+      },
+      "description" :"Adds the contents to the clipboard"
+    },
+    "paste":{
+      "suggested_key":{
+        "default":"Ctrl+V"          //paste key shortcut
+        "mac":"Command+V"
+      },
+      "description" :"copies the contents from the clipboard"
+  },                                       
   "content_capabilities": ...,
   "content_scripts": [{...}],
   "content_security_policy": "policyString",
