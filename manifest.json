@@ -33,21 +33,21 @@
     }
   },
   "chrome_url_overrides": {...},
-  "commands": {                        //to get access to keyboard shortcuts
-    "copy":{
-      "suggested_key":{
-        "default":"Ctrl+C"          //copy key shortcut
-        "mac":"Command+C"
-      },
-      "description" :"Adds the contents to the clipboard"
-    },
-    "paste":{
-      "suggested_key":{
-        "default":"Ctrl+V"          //paste key shortcut
-        "mac":"Command+V"
-      },
-      "description" :"copies the contents from the clipboard"
-  },                                       
+  // "commands": {                        //to get access to keyboard shortcuts
+  //   "copy":{
+  //     "suggested_key":{
+  //       "default":"Ctrl+C"          //copy key shortcut
+  //       "mac":"Command+C"
+  //     },
+  //     "description" :"Adds the contents to the clipboard stack"
+  //   },
+  //   "paste":{
+  //     "suggested_key":{
+  //       "default":"Ctrl+V"          //paste key shortcut
+  //       "mac":"Command+V"
+  //     },
+  //     "description" :"copies the contents from the clipboard stack"
+  // },                                       
   "content_capabilities": ...,
   "content_scripts": [{...}],
   "content_security_policy": "policyString",
@@ -83,7 +83,11 @@
     "chrome_style": true,
     "page": "options.html"
   },
-  "permissions": ["tabs"],
+  "permissions": [
+    "tabs"
+    "clipboardRead"
+    "clipboardWrite"
+  ],
   "platforms": ...,
   "plugins": [...],
   "requirements": {...},
