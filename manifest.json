@@ -6,11 +6,17 @@
 
   // Recommended
   "default_locale": "en",
-  "description": "This extension allows you to perform multiple copy-paste operations.",
+  "description": "An extension application for copying multiple snippets and pasting them on demand.",
   "icons": {...},
 
   // Pick one (or none)
-  "browser_action": {...},
+  "commands":{
+    
+    },
+  "browser_action": {
+     "default_icon": "icon.png"
+
+     },
   "page_action": {...},
 
   // Optional
@@ -29,7 +35,7 @@
     }
   },
   "chrome_url_overrides": {...},
-  "commands": {...},
+  
   "content_capabilities": ...,
   "content_scripts": [{...}],
   "content_security_policy": "policyString",
