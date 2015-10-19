@@ -14,24 +14,24 @@
     "default_title": "CopyStack",  
     "default_popup": "popup.html" //Popup.html gives out popup layout for extension
   },
-  "page_action": {...},
+  // "page_action": {...},
 
-  // Optional
-  "author": ...,
-  "automation": ...,
-  "background": {
-    // Recommended
-    "persistent": false
-  },
-  "background_page": ...,
-  "chrome_settings_overrides": {...},
-  "chrome_ui_overrides": {
-    "bookmarks_ui": {
-      "remove_bookmark_shortcut": true,
-      "remove_button": true
-    }
-  },
-  "chrome_url_overrides": {...},
+  // // Optional
+  // "author": ...,
+  // "automation": ...,
+  // "background": {
+  //   // Recommended
+  //   "persistent": false
+  // },
+  // "background_page": ...,
+  // "chrome_settings_overrides": {...},
+  // "chrome_ui_overrides": {
+  //   "bookmarks_ui": {
+  //     "remove_bookmark_shortcut": true,
+  //     "remove_button": true
+  //   }
+  // },
+  // "chrome_url_overrides": {...},
   // "commands": {                        //to get access to keyboard shortcuts
   //   "copy":{
   //     "suggested_key":{
@@ -47,40 +47,40 @@
   //     },
   //     "description" :"copies the contents from the clipboard stack"
   // },                                       
-  "content_capabilities": ...,
+  //"content_capabilities": ...,
   "content_scripts": [{ "matches": ["http://*/*"],            //bubble overlay 
       "css": ["main.css"],
       "js": ["main.js"],
       "run_at": "document_end",
       "all_frames": true
       }],
-  "content_security_policy": "policyString",
-  "converted_from_user_script": ...,
-  "copresence": ...,
-  "current_locale": ...,
-  "devtools_page": "devtools.html",
-  "event_rules": [{...}],
-  "externally_connectable": {
-    "matches": ["*://*.example.com/*"]
-  },
-  "file_browser_handlers": [...],
-  "file_system_provider_capabilities": {
-    "configurable": true,
-    "multiple_mounts": true,
-    "source": "network"
-  },
-  "homepage_url": "http://path/to/homepage",
-  "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
-  "incognito": "spanning or split",
-  "input_components": ...,
-  "key": "publicKey",
-  "minimum_chrome_version": "versionString",
-  "nacl_modules": [...],
-  "oauth2": ...,
-  "offline_enabled": true,
-  "omnibox": {
-    "keyword": "aString"
-  },
+  // "content_security_policy": "policyString",
+  // "converted_from_user_script": ...,
+  // "copresence": ...,
+  // "current_locale": ...,
+  // "devtools_page": "devtools.html",
+  // "event_rules": [{...}],
+  // "externally_connectable": {
+  //   "matches": ["*://*.example.com/*"]
+  // },
+  // "file_browser_handlers": [...],
+  // "file_system_provider_capabilities": {
+  //   "configurable": true,
+  //   "multiple_mounts": true,
+  //   "source": "network"
+  // },
+  // "homepage_url": "http://path/to/homepage",
+  // "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
+  // "incognito": "spanning or split",
+  // "input_components": ...,
+  // "key": "publicKey",
+  // "minimum_chrome_version": "versionString",
+  // "nacl_modules": [...],
+  // "oauth2": ...,
+  // "offline_enabled": true,
+  // "omnibox": {
+  //   "keyword": "aString"
+  // },
   "optional_permissions": ["tabs"],
   "options_page": "options.html",
   "options_ui": {
@@ -88,25 +88,25 @@
     "page": "options.html"
   },
   "permissions": [
-    "tabs"
-    "clipboardRead"
+    "tabs",
+    "clipboardRead",
     "clipboardWrite"  
   ],
-  "platforms": ...,
-  "plugins": [...],
-  "requirements": {...},
-  "sandbox": [...],
-  "short_name": "Short Name",
-  "signature": ...,
-  "spellcheck": ...,
-  "storage": {
-    "managed_schema": "schema.json"
-  },
-  "system_indicator": ...,
-  "tts_engine": {...},
-  "update_url": "http://path/to/updateInfo.xml",
-  "version_name": "aString",
-  "web_accessible_resources": [...],
+  // "platforms": ...,
+  // "plugins": [...],
+  // "requirements": {...},
+  // "sandbox": [...],
+  // "short_name": "Short Name",
+  // "signature": ...,
+  // "spellcheck": ...,
+  // "storage": {
+  //   "managed_schema": "schema.json"
+  // },
+  // "system_indicator": ...,
+  // "tts_engine": {...},
+  // "update_url": "http://path/to/updateInfo.xml",
+  // "version_name": "aString",
+  // "web_accessible_resources": [...],
 
   "commands": {
     "copy": {
