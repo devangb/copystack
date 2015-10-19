@@ -1,13 +1,12 @@
 {
   // Required
   "manifest_version": 2,
-  "name": "CopyStack"
-  "version": "1.0",
+  "name": "CopyStack",
+  "version" :"1.0",
 
   // Recommended
   "default_locale": "en",
   "description": "This extension allows you to perform multiple copy-paste operations.",
-  "icons": {...},
 
   // Pick one (or none)
   "browser_action": {
@@ -49,7 +48,12 @@
   //     "description" :"copies the contents from the clipboard stack"
   // },                                       
   "content_capabilities": ...,
-  "content_scripts": [{...}],
+  "content_scripts": [{ "matches": ["http://*/*"],            //bubble overlay 
+      "css": ["main.css"],
+      "js": ["main.js"],
+      "run_at": "document_end",
+      "all_frames": true
+      }],
   "content_security_policy": "policyString",
   "converted_from_user_script": ...,
   "copresence": ...,
@@ -86,7 +90,7 @@
   "permissions": [
     "tabs"
     "clipboardRead"
-    "clipboardWrite"
+    "clipboardWrite"  
   ],
   "platforms": ...,
   "plugins": [...],

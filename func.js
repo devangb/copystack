@@ -4,8 +4,18 @@
  */
 
 chrome.commands.onCommand.addListener(function(command) {
-	 if (command == "copy") {
-    // add the selected contents ot the clipboard stack
+	 if (command == "paste_dialog") {
+    // dialog of the clipboard
   
   });
 });
+
+function getclipboarddata(){
+
+	var paste_dia= document.createElement('textarea');
+	document.body.appendChild(paste_dia);
+	paste_dia.focus();
+	document.execCommand('paste');
+
+}
+
