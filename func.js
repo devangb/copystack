@@ -19,3 +19,9 @@ function getclipboarddata(){
 
 }
 
+function renderStatus(statusText) {
+  document.getElementById('clipboard').textContent = statusText;
+}
+
+
+
