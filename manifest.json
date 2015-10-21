@@ -6,11 +6,11 @@
 
   // Recommended
   //"default_locale": "en",
-  "description": "This extension allows you to perform multiple copy-paste operations.",
+  "description": "Multiple cut-copy and past on demand",
 
   // Pick one (or none)
   "browser_action": {
-    "default_icon": "images/icon_19.png",  // To fill in icon file
+    "default_icon": "images/icon.png",  // To fill in icon file
     "default_title": "CopyStack",  
     "default_popup": "popup.html" //Popup.html gives out popup layout for extension
   },
@@ -124,8 +124,8 @@
     //},
     "paste_dialog": {
       "suggested_key": {
-        "default": "Ctrl+Shift+V",
-        "mac": "Command+Shift+V"
+        "default": "Ctrl+Shift+Z",
+        "mac": "Command+Shift+Z"
       },
       "description" :"Adds the contents to the clipboard stack"
     }

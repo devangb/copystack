@@ -6,9 +6,41 @@
 chrome.commands.onCommand.addListener(function(command) {
 	 if (command == "paste_dialog") {
     // dialog of the clipboard
-  
+
   });
 });
+
+function displayclipboard(){
+
+//Clipboard display popup on extension click
+
+}
+
+function displayitem(){
+
+// Function to display each item in the clipboard
+
+}
+
+function getforpaste(){
+
+// Function to get item for paste execution
+
+}
+
+function copyitem(){
+
+// Copy item to extension storage
+
+}
+
+function cutitem(){
+
+// Cut item to extension storage
+
+}
+
+
 
 function getclipboarddata(){
 
